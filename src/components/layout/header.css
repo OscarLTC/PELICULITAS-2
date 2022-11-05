@@ -1,0 +1,153 @@
+.header{  
+    font-size: 30px;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header .top-header{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.top-header .logo{
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.top-header .icons{
+    padding: 0;
+    display: flex;
+}
+
+.icons .menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    background-color: #ffffff06;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px black;
+}
+
+.icons .menui{
+    width: 160px;
+    visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    right: 0;
+    opacity: 0;
+    top: 90px;
+}
+
+.menui .options{
+    transition: .5s all ;
+    visibility: hidden;
+    position: absolute;
+    width: 160px;
+    right: 0px;
+    padding: 0;
+    opacity: 0;
+    top: 90px;
+    border-radius: 10px;
+    background-color: #ffffff16;
+}
+
+.menui ul{
+    background-color: transparent;
+    list-style: none;
+}
+
+.menui li{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.icons .menuv{
+    width: 160px;
+    right: 30px;
+    padding: 0;
+    top: 90px;
+    background-color: transparent;
+    visibility: visible;
+} 
+
+.menuv .options{
+    transition: .5s all ;
+    position: absolute;
+    width: 160px;
+    right: 30px;
+    padding: 0;
+    top: 90px;
+    border-radius: 10px;
+    background-color: #ffffff3f;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+
+}
+
+.menuv ul{
+    background-color: transparent;
+    list-style: none;
+}
+
+.menuv li{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.option-icon{
+    padding-top: 10px;
+    background-color: transparent;
+}
+
+.option-name{
+    background-color: transparent;
+}
+
+
+
+.header .search{
+    margin-top: 20px;
+    background-color: #ffffff06;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0.5px 0.5px black;
+}
+
+.search .icon{
+    background: transparent;
+    padding: 10px;
+    border-right: 1px #ffffff16  solid ;
+}
+
+.search .text{
+    outline: none;
+    border: 0;
+    background: transparent;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #ffffff26;
+}
+
+.search .text:focus{
+    color: white;
+}
+
+
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
