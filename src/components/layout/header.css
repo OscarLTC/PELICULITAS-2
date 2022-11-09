@@ -22,10 +22,15 @@
     display: flex;
 }
 
+.optionstop{
+    visibility: hidden;
+    position: absolute;
+}
+
 .icons .menu-icon{
     position: absolute;
     right: 30px;
-    top: 40px;
+    top: 42px;
     animation-name: rotate;
     animation-duration: 0.5s;
     background-color: #ffffff06;
@@ -146,8 +151,110 @@
 }
 
 
+.searchtop{
+    visibility: hidden;
+    position: absolute;
+}
+
+
 
 @keyframes rotate {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
+}
+
+
+@media (min-width: 600px) {
+    
+    
+    .top-header{
+        align-items: center;
+    }
+
+    .search{
+        visibility: hidden;
+        
+    }
+
+    .searchtop{
+        visibility: visible;
+        position: relative;
+        background-color: #ffffff06;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        box-shadow: 0.5px 0.5px black;
+    }
+    .searchtop .icon{
+        background: transparent;
+        padding: 10px;
+        border-right: 1px #ffffff16  solid ;
+    }
+    
+    .searchtop .text{
+        outline: none;
+        border: 0;
+        background: transparent;
+        margin-left: 10px;
+        font-size: 15px;
+        color: #ffffff26;
+    }
+    
+    .searchtop .text:focus{
+        color: white;
+    }
+}
+
+@media (min-width: 700px) {
+
+    .logo{
+        font-size: 25px;
+    }
+    .icons{
+        visibility: hidden;
+    }
+
+    .optionstop{
+        position: relative;
+        visibility: visible;
+    }
+
+
+
+    .optionstop ul{
+        list-style: none;
+        display: flex;
+    }
+
+    .optionstop li{
+        display: flex;
+        font-size: 15px;
+    }
+
+
+    .option-selected .icon-option{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .option-selected .name-option{
+        background-color: #ffffffbf;
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+
+    .icon-option{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .name-option{
+        background-color: #ffffff06;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
